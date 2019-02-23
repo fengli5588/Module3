@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .search_form{
+            width: 602px;
+            height: 42px;
+            background:gold;
+        }
+
+        .input_txt{
+            width: 500px;
+            height: 40px;
+            border:1px solid #0fad10;
+
+            /* 清除掉默认的padding */
+            padding:0px;
+            text-indent:10px;
+
+            /* 去掉蓝色高亮框 */
+            outline:none;
+            
+            /* 用浮动解决内联元素错位以及小间距的问题 */
+            float: left;
+        }
+
+        .input_sub{
+            width:100px;
+            height: 42px;
+            background:#0fad10;
+
+            /* 去掉submit按钮默认的边框 */
+            border:0px;
+
+            /* 用浮动解决内联元素错位以及小间距的问题 */
+            float: left;
+
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form class="search_form">
+        <!-- 设置input框的默认提示文字，用placeholder属性 -->
+        <input type="text" class="input_txt" placeholder="请输入搜索内容">
+        <input type="submit" value="搜 索" class="input_sub">
+    </form>
+</body>
+</html>

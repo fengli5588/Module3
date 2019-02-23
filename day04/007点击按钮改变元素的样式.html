@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            var oBtn = document.getElementById('btn01');
+            var oDiv = document.getElementById('div01');
+            
+            /*
+            function fnChange(){
+                oDiv.style.width= '300px';
+                oDiv.style.height= '300px';
+                oDiv.style.background= 'gold';
+            }
+            
+            oBtn.onclick = fnChange;
+            */         
+            
+            // 上面两句可以改写成下面匿名函数的形式：            
+            // oBtn.onclick = function(){
+            //     oDiv.style.width= '300px';
+            //     oDiv.style.height= '300px';
+            //     oDiv.style.background= 'gold';
+            // };
+
+            oBtn.onclick = () => {
+                oDiv.style.width= '300px';
+                oDiv.style.height= '300px';
+                oDiv.style.background= 'gold';
+            };
+
+        }  
+    
+    </script>
+</head>
+<body>
+    <input type="button" value="改变样式" id="btn01">
+    <div id="div01">这是一个div</div>
+</body>
+</html>

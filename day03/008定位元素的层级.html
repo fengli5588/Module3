@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .con{
+            width:300px;
+            height:300px;
+            border:1px solid black;
+            margin:0px auto;
+            position: relative;
+        }
+
+        .con div{
+            width:200px;
+            height:70px;
+            margin:10px;
+            position:absolute;
+        }
+
+        .box01{
+            background:lightgreen;
+            left:0px;
+            top:0px;
+
+            /* 设置定位元素的层级 */
+            z-index:6;
+        }
+
+        .box02{
+            background: lightskyblue;
+            left:30px;
+            top:30px;
+            z-index:7;
+        }
+
+        .box03{
+            background: lightpink;
+            left:60px;
+            top:60px;
+            z-index:8;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- .con>.box01+.box02+.box03 -->
+    <div class="con">
+        <!-- 如果不设置z-index属性，定位元素的层级安装代码书写的顺序，先写的排列在下面，后写的排列在上面 -->
+        <div class="box01">1</div>
+        <div class="box02">2</div>
+        <div class="box03">3</div>
+    </div>
+</body>
+</html>

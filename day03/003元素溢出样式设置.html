@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .con{
+            width: 300px;
+            height: 300px;
+            border:1px solid black;
+            margin:0px auto;
+            /* 父元素设置overflow属性 */
+            /* 
+                visible:默认设置，超出部分显示
+                hidden: 将超出的部分隐藏
+                scroll: 不管是否超出，都会显示滚动条，来滚动显示超出的部分
+                auto：根据实际情况，动态显示滚动条
+             */
+            overflow:auto;
+        }
+
+        .box{
+            width:200px;
+            height:500px;
+            background:gold;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <!-- .con>.box -->
+    <div class="con">
+        <div class="box">
+            文字内容
+            <br>
+            <br>
+            <br>
+            文字内容
+            <br>
+            <br>
+            <br>
+            文字内容
+            <br>
+            <br>
+            <br>
+            文字内容
+            <br>
+            <br>
+            <br>
+            文字内容
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+</html>

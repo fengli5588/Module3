@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 设置display属性，将块元素转化成内联元素 */
+        div{
+            display:inline;
+        }
+        
+        /* 设置display属性，将内联元素转化成块元素 */
+        a{
+            display:block;
+        }
+
+        .p01{
+            width: 200px;
+            height: 200px;
+            background:gold;
+
+            /* 设置display属性，将元素隐藏 */
+            display:none;
+        }
+    
+    </style>
+</head>
+<body>
+    <div>这是第一个div</div>
+    <div>这是第二个div</div>
+    <a href="#">这是第一个链接</a>
+    <a href="#">这是第二个链接</a>
+
+    <p class="p01" style="display:block"></p>
+
+    <div>下面的div</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .list{
+            /* 去掉列表的小圆点 */
+            list-style:none;
+            /* 去掉列表的内边距和外边距 */
+            margin:0px;
+            padding:0px;
+       }
+       
+       .list li{
+            line-height:40px;
+            border-bottom:1px solid gray;
+            text-indent:10px;
+        }
+
+        .list a{
+            text-decoration:none;
+            color:black;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- 创建列表标签 -->
+    <!-- ul>li{列表文字}*6 -->
+    <ul class="list">
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+    </ul>
+
+    <!-- ul>(li>a{列表文字})*8 -->
+     <ul class="list">
+         <li><a href="#">列表文字</a></li>
+         <li><a href="#">列表文字</a></li>
+         <li><a href="#">列表文字</a></li>
+         <li><a href="#">列表文字</a></li>
+         <li><a href="#">列表文字</a></li>
+         <li><a href="#">列表文字</a></li>
+         <li><a href="#">列表文字</a></li>
+         <li><a href="#">列表文字</a></li>
+     </ul>
+</body>
+</html>

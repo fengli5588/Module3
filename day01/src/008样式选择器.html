@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 第一种选择器：标签选择器，会选择页面上所有对应的标签 */
+        div{
+            width:200px;
+            height:200px;
+            background:gold;
+        }
+        
+        /* 第二种选择器：类选择器,是使用最多的一种选择器 */
+        .red{
+            color:red;
+        }
+        .big{
+            font-size:30px;
+        }
+
+        /* 第三种选择器：层级选择器,和页面上的层级进行匹配 */
+        .red span{
+            color:blue;
+        }
+    
+    </style>
+</head>
+<body>  
+    <div>这是第一个div</div>
+    <div>这是第二个div</div>
+
+    <p class="red">这是第一个<span>段落</span></p>
+    <p class="big red">这是第二个段落</p>
+    <span>外面的span</span>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .pop{
+            width:500px;
+            height:300px;
+            border:1px solid black;
+            background:white;
+            position: fixed;
+
+            /* 弹框水平垂直居中的写法： */
+            left:50%;
+            top:50%;
+            margin-left:-251px;
+            margin-top:-151px;
+            /* 设置弹框的层级,设置比较大的值，盖住其他所有的元素*/
+            z-index:9999;
+        }
+        .pop h3{
+            margin:5px;
+            background: lightskyblue;
+            line-height:40px;
+        }
+
+        .mask{
+            position:fixed;
+            left:0px;
+            top:0px;
+            width:100%;
+            height:100%;
+            background:black;
+            z-index:9998;
+
+            /* 设置背景的透明度 */
+            opacity:0.3;
+            /* 透明度兼容写法，兼容IE */
+            filter:alpha(opacity=30);
+            
+        }
+        
+        /* 设置pop_con的隐藏，可以同时将弹框和背景隐藏起来 */
+        .pop_con{
+            display:none;
+        }  
+    </style>
+</head>
+<body>
+    <h1>网页内容</h1>
+    <div class="pop_con" style="display:block">
+        <div class="pop">
+            <h3>弹框标题</h3>
+            <p>弹框的文字内容</p>
+        </div>
+        <div class="mask"></div>
+    </div>
+</body>
+</html>
