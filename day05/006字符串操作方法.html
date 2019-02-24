@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var iNum01 = 12;
+        var sNum01 = '12';
+        var sNum02 = '12.45';
+        
+        // "+"符号两边如果都是数字，就做加法运算，如果有一边是字符串，就做字符串拼接。
+        //alert(iNum01+10); 弹出 22
+        // alert(sNum01+10); 弹出 '1210'
+        
+        // parseInt可以将数字的字符串转化为整数，默认去到小数位
+        //alert( parseInt(sNum01)+10 );
+        //alert( parseInt(sNum02)+10 );
+
+        //alert( parseFloat(sNum02)+10 );
+
+        var sTr = '2018-5-7';
+        
+        // 将字符串分割成数组
+        var aList = sTr.split('-');
+        var aList2 = sTr.split('');
+        //alert(aList);
+        //alert(aList2);
+
+        // 获取某小段字符串在大段字符串里面的索引值
+        var sTr2 = 'abcdefgh123456';
+        var iPos = sTr2.indexOf('ef');
+        var iPos2 = sTr2.indexOf('i');
+
+        //alert(iPos);
+        //alert(iPos2);
+
+        // 截取字符串
+        var sTr3 = sTr2.substring(3,6);
+        var sTr4 = sTr2.substring(3);
+        alert(sTr3);
+        alert(sTr4);
+
+
+
+
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
