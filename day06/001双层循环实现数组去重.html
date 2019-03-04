@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var aList = ['a','b','c','d','a','b','e','f'];
+
+        for(var i=0;i<aList.length;i++)
+        {
+            for(var j=0;j<i;j++)
+            {
+                if(aList[i]==aList[j]){
+                    aList.splice(i,1);
+                    i--;
+                }
+            }
+        }
+
+        alert(aList);   
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
