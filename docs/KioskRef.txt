@@ -1,0 +1,88 @@
+1. install nvm
+https://github.com/creationix/nvm
+  1. Follow the instruction to install nvm
+  2. hkjc@hkjc-OptiPlex-7020:~nv$ nvm install v10.15.1
+
+
+2.
+npm cache clean --force
+
+
+3. File cache size
+$ sudo sysctl fs.inotify.max_user_watches=16384
+
+
+=============================
+4. The logic of calling flow 
+=============================
+  1. main.ts inner layer Angular entry
+	/home/hkjc/Documents/Kiosk/eakiosk/src/main.ts
+    1. Invoke AppModule, search for AppModule
+    2. /home/hkjc/Documents/Kiosk/eakiosk/src/app/app.module.ts
+      1. Search for AppModule -> bootstrap: [AppComponent]
+    3. /home/hkjc/Documents/Kiosk/eakiosk/src/app/app.component.html
+      <router-outlet></router-outlet>
+    4. /home/hkjc/Documents/Kiosk/eakiosk/src/app/app-routing.module.ts
+       const routes: Routes = [
+    	{
+        	path: '',
+        	component: HomeComponent
+    	}
+	];
+    5. /home/hkjc/Documents/Kiosk/eakiosk/src/app/components/home/home.component.ts
+ 	@Component({
+	  selector: 'app-home',
+	  templateUrl: './home.component.html',
+	  styleUrls: ['./home.component.scss'],
+	  animations: [OddsClickedAnimation, PoolBtnClickedAnimation]
+	})
+	
+	
+
+  2. main.ts outter layer is Electron entry
+	/home/hkjc/Documents/Kiosk/eakiosk/main.ts
+
+5. install git
+$ sudo apt-get install git
+
+6. Frank's gitbucket account
+  uname: 549143762@qq.com
+  pwd:   wb521@wb1
+
+7.
+hkjc@hkjc-OptiPlex-7020:~/Documents/Kiosk/eakiosk$ git branch
+* master
+hkjc@hkjc-OptiPlex-7020:~/Documents/Kiosk/eakiosk$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/racing_demo
+hkjc@hkjc-OptiPlex-7020:~/Documents/Kiosk/eakiosk$ git checkout -b racing_demo
+Switched to a new branch 'racing_demo'
+hkjc@hkjc-OptiPlex-7020:~/Documents/Kiosk/eakiosk$ git branch
+  master
+* racing_demo
+
+8. git gui plug-in
+search for "gitlens"
+
+9. Install a component
+$ ng g c component/dir01
+
+10. ctrl + p (search a file name)
+
+11. Connect to LAN git repository 
+  1. svr          mask           gateway
+     =========================================
+     192.168.0.6  255.255.255.9	 192.168.0.255
+     ========================================= 
+  2.git clone git@192.168.0.2:/kiosk.git
+
+12. 7zip 
+	1. sudo apt-get install p7zip // The one I used for install
+	2. sudo apt install p7zip-full 
+
+
+
+	
+
