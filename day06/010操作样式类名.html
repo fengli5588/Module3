@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .big{
+            font-size:30px;
+        }
+        .red{
+            color:red;
+        }        
+        .noline{
+            text-decoration:none;
+        }
+    
+    </style>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            var $a = $('#link01');
+
+            $a.addClass('big');
+            $a.addClass('red');
+            $a.addClass('noline');
+
+            $a.removeClass('big');
+            $a.removeClass('red noline');
+
+
+        })
+    
+    </script>
+</head>
+<body>
+    <a href="#" id="link01">这是一个链接</a>
+</body>
+</html>
